@@ -1,7 +1,8 @@
-# TrabajoARQSLavadoras
+# Laundry Order Manager (Java)
 
-Proyecto en **Java** (com.mycompany.lavadorasapp) de **Arquitectura Software** para la gestión de pedidos de una lavandería.
+Object-oriented **Java** application (`com.mycompany.lavadorasapp`) for managing laundry service orders, designed around **Software Architecture** principles.
 
-## Contenido
-- Pedido.java: Modelo principal de pedido con validación de peso (0–10 kg), cliente, dirección, lista de tipos de ropa, programa de lavado y estado del pedido (PENDIENTE, etc.).
-- Lavanderia2.zip: Empaquetado completo del proyecto.
+## Features & Domain Model
+- **Order Domain (`Pedido.java`):** Encapsulates order business logic linking `Cliente`, `ProgramaLavado`, `TipoRopa` list, delivery address, comments, and order state (`EstadoPedido.PENDIENTE`, etc.).
+- **Business Rules & Validation:** Enforces runtime constraints (e.g., strict laundry load validation between **0 kg and 10 kg** throwing `IllegalArgumentException`) and auto-incrementing order IDs.
+- **Packaged Source:** Includes `Lavanderia2.zip` with the full project structure.
